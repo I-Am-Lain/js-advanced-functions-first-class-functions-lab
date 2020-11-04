@@ -24,16 +24,12 @@ function createFareMultiplier(int){
 }
 
 function fareDoubler(fare){
-    const a = createFareMultiplier(1)
+    const a = createFareMultiplier(2)
 
-    return a(fare) * 2
+    return a(fare)
 }
 
-function fareTripler(fare){
-    const a = createFareMultiplier(1)
-
-    return a(fare) * 3
-}
+const fareTripler = createFareMultiplier(3)    // faster way to do it
 
 function selectDifferentDrivers(drivers, f){
     return f(drivers)
